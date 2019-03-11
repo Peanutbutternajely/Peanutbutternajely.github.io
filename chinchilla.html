@@ -104,3 +104,56 @@ small {
       <li><button onclick=griptape()>GripTape</button></li>
       <li><button onclick=trucks()>Trucks</button><li>
       <li><button onclick=wheels()>Wheels</button><li>
+      <li><button onclick=bearings()Bearings</button><li>
+    <ul>
+        
+<h1>Mid90s</h1>
+<h2>a New York City skate shop and indoor skatepark</h2>
+        
+<div id='chinchilla> </div>
+
+<script>
+         
+   decksImages = [
+      'url("https://s7d9.scene7.com/is/image/zumiez/cat_max/Primitive-x-Rick-and-Morty-PRod-Rick-8.0%26quot%3B-Skateboard-Deck-_309408.jpg"),
+      'url("https://static.highsnobiety.com/wp-content/uploads/2018/04/30111809/supreme-skateboard-decks-9.jpg")',
+      'url("https://img.skatewarehouse.com/watermark/rs.php?path=SCTMDK-1.jpg&nw=435")',
+      'url("https://pacwave.com/wp-content/uploads/2018/10/TMNT_Skateboard_8_800x.jpg")',
+     ]
+     
+ function decks() {
+     
+     Decks = document.getElementById("chinchilla")
+     Decks.innerHTML = ''
+     Decks.innerHTML += DecksDivs[0]
+     Decks.innerHTML += DecksDivs[1]
+     Decks.innerHTML += DecksDivs[2]
+     //alert ("you've chosen decks")
+     items = document.getElementsByClassName("item")
+     items[0].style.background = decksImages[0]
+     items[0].style.backgroundSize = '100% 100%'
+     items[1].style.background = decksImages[1]
+     items[1].style.backgroundSize = '100% 100%'
+     items[2].style.background = decksImages[2]
+     items[2].style.backgroundSize = '100% 100%'
+  }
+     griptapeImages = [
+        'url("https://cdn.shoplightspeed.com/shops/611925/files/4046048/globe-almost-batman-abstract-grip-tape.jpg")',
+        'url("https://img.skatewarehouse.com/watermark/rs.php?path=THSGGT-1.jpg&nw=435")',
+        'url("https://cdn.shoplightspeed.com/shops/607275/files/11012201/650x750x2/primitive-skateboards-dragon-ball-z-goku-griptape.jpg")',
+     ]
+     
+     function griptape() {
+     
+        Gripatpes = documet.getElementById("chinchilla")
+        Griptapes = innerHTML = ''
+        Griptapes = innerHTML += GriptapesDivs[0]
+        Griptapes = innerHTML += GriptapesDivs[1]
+        Griptapes = innerHTML += GriptapesDivs[2]
+        //alert ("you've chosen griptapes")
+        items = document.getElementsByClassName("item")
+        items[0].style.background = griptapeImages[0]
+        items[0].style.backgroundSize = '100% 100%'
+        items[1].style.background = griptapeImages[1]
+        items[1].style.backgroundSize = '100% 100%'
+        items[2].style.background = griptapeImages[2]
