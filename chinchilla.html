@@ -176,5 +176,41 @@ small {
         '<div class="item"><p>Thrasher Griptape <span class="price">$25</span><br /><small>Tri-tip capicola kielbasa breaola. </small></p></div>',
         '<div class='item"><p>Dragon Ball Z Goku Griptape <span class="price">$25</span><br /><small>Lollipop ice cream candy canes. </small></p></div>',
       ]
+      
       TrucksDivs = [
-        '<div class="item"><p>Thrasher (TIME TO GRIND) Trucks <span class="price">$25</span><                                                     
+      '<div class="item"><p>Thrasher (TIME TO GRIND) Trucks <span class="price">$25</span><br /><small>Mustard sierra leone bologi. </small></p></div>',
+      '<div class="item"><p>Galaxy Trucks <span class="price">$25</span><br /><small>Tri-tip capicola kielbasa bresaola. </small></p></div>',
+	  '<div class="item"><p>Checkered PHANTOM Trucks <span class="price">$25</span><br /><small>Lollipop ice cream candy canes.</small></p></div>',
+			]
+
+  
+     
+  function trucks() {
+    Trucks = document.getElementById("chinchilla")
+    Trucks.innerHTML = ''
+    Trucks.innerHTML += TrucksDivs[0]
+    Trucks.innerHTML += TrucksDivs[1]
+    Trucks.innerHTML += TrucksDivs[2]
+    //alert ("you've chosen trucks")
+    items = document.getElementsByClassName("item")
+    items[0].style.background = trucksImages[0]
+    items[0].style.backgroundSize = '100% 100%'
+    items[1].style.background = trucksImages[1]
+    items[1].style.backgroundSize = '100% 100%'
+    items[2].style.background = trucksImages[2]
+    items[2].style.backgroundSize = '100% 100%'
+  }
+   
+  function wheels() {
+    alert ("you've chosen wheels")
+  }
+  function bearings() {
+    alert ("you've chosen bearings")
+  }
+
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+
+</body>  
