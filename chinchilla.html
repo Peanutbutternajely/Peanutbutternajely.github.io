@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <script src="/assets/jquery.js"></script>
-<link href ='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
 <style>
     ul {
-    padding: 1opx;
-    background: rgba(0,0,0,0.10);
-    text-align: center;
+      padding: 10px;
+      background: rgba(0,0,0,0.10);
+      text-align: center;
     }
-    
     li {
-    display: inline;
-    padding: 0px 10px 0px 10px
+      display: inline;
+      padding: 0px 10px 0px 10px;
     }
 body {
   font-family: helvetica, sans-serif;
@@ -69,6 +69,7 @@ small {
   opacity: 1;
 }
 
+
 .price {
   float: right;
 }
@@ -103,85 +104,86 @@ small {
     <ul>
       <li><button onclick=decks()>Decks</button></li>
       <li><button onclick=griptape()>GripTape</button></li>
-      <li><button onclick=trucks()>Trucks</button><li>
-      <li><button onclick=wheels()>Wheels</button><li>
-      <li><button onclick=bearings()Bearings</button><li>
-    <ul>
-        
+      <li><button onclick=trucks()>Trucks</button></li>
+      <li><button onclick=wheels()>Wheels</button></li>
+      <li><button onclick=bearings()>Bearings</buttons></li>
+    </ul>
+
+
 <h1>Mid90s</h1>
 <h2>a New York City skate shop and indoor skatepark</h2>
-        
-<div id='chinchilla> </div>
+
+<div id="chinchilla"> </div>
 
 <script>
-         
+
    decksImages = [
-      'url("https://s7d9.scene7.com/is/image/zumiez/cat_max/Primitive-x-Rick-and-Morty-PRod-Rick-8.0%26quot%3B-Skateboard-Deck-_309408.jpg"),
-      'url("https://static.highsnobiety.com/wp-content/uploads/2018/04/30111809/supreme-skateboard-decks-9.jpg")',
-      'url("https://img.skatewarehouse.com/watermark/rs.php?path=SCTMDK-1.jpg&nw=435")',
-      'url("https://pacwave.com/wp-content/uploads/2018/10/TMNT_Skateboard_8_800x.jpg")',
-     ]
-     
- function decks() {
-     
-     Decks = document.getElementById("chinchilla")
-     Decks.innerHTML = ''
-     Decks.innerHTML += DecksDivs[0]
-     Decks.innerHTML += DecksDivs[1]
-     Decks.innerHTML += DecksDivs[2]
-     //alert ("you've chosen decks")
-     items = document.getElementsByClassName("item")
-     items[0].style.background = decksImages[0]
-     items[0].style.backgroundSize = '100% 100%'
-     items[1].style.background = decksImages[1]
-     items[1].style.backgroundSize = '100% 100%'
-     items[2].style.background = decksImages[2]
-     items[2].style.backgroundSize = '100% 100%'
+     'url("https://s7d9.scene7.com/is/image/zumiez/cat_max/Primitive-x-Rick-and-Morty-PRod-Rick-8.0%26quot%3B-Skateboard-Deck-_309408.jpg")',
+     'url("https://static.highsnobiety.com/wp-content/uploads/2018/04/30111809/supreme-skateboard-decks-9.jpg")',
+     'url("https://img.skatewarehouse.com/watermark/rs.php?path=SCTMDK-1.jpg&nw=435")',
+     'url("https://pacwave.com/wp-content/uploads/2018/10/TMNT_Skateboard_8_800x.jpg")',
+      ]
+
+  function decks() {
+    
+    Decks = document.getElementById("chinchilla")
+    Decks.innerHTML = ''
+    Decks.innerHTML += DecksDivs[0]
+    Decks.innerHTML += DecksDivs[1]
+    Decks.innerHTML += DecksDivs[2]
+    //alert ("you've chosen decks")
+    items = document.getElementsByClassName("item")
+    items[0].style.background = decksImages[0]
+    items[0].style.backgroundSize = '100% 100%'
+    items[1].style.background = decksImages[1]
+    items[1].style.backgroundSize = '100% 100%'
+    items[2].style.background = decksImages[2]
+    items[2].style.backgroundSize = '100% 100%'
   }
-     griptapeImages = [
-        'url("https://cdn.shoplightspeed.com/shops/611925/files/4046048/globe-almost-batman-abstract-grip-tape.jpg")',
-        'url("https://img.skatewarehouse.com/watermark/rs.php?path=THSGGT-1.jpg&nw=435")',
-        'url("https://cdn.shoplightspeed.com/shops/607275/files/11012201/650x750x2/primitive-skateboards-dragon-ball-z-goku-griptape.jpg")',
+   griptapeImages = [
+     'url("https://cdn.shoplightspeed.com/shops/611925/files/4046048/globe-almost-batman-abstract-grip-tape.jpg")',
+     'url("https://img.skatewarehouse.com/watermark/rs.php?path=THSGGT-1.jpg&nw=435")',
+     'url("https://cdn.shoplightspeed.com/shops/607275/files/11012201/650x750x2/primitive-skateboards-dragon-ball-z-goku-grip-tape.jpg")',
      ]
      
-     function griptape() {
+  function griptape() {
+    
+    Griptapes = document.getElementById("chinchilla")
+    Griptapes.innerHTML = ''
+    Griptapes.innerHTML += GriptapesDivs[0]
+    Griptapes.innerHTML += GriptapesDivs[1]
+    Griptapes.innerHTML += GriptapesDivs[2]
+    //alert ("you've chosen griptapes")
+    items = document.getElementsByClassName("item")
+    items[0].style.background = griptapeImages[0]
+    items[0].style.backgroundSize = '100% 100%'
+    items[1].style.background = griptapeImages[1]
+    items[1].style.backroundSize = '100% 100%'
+    items[2].style.background = griptapeImages[2]
+    items[2].style.backgroundSize = '100% 100%'
+  }
+   trucksImages = [
+     'url("https://www.nhsfunfactory.com/mm5/graphics/00000001/IN_ThrasherTTGTruck_Silver_Front_448x224.jpg")',
+     'url("https://scene7.zumiez.com/is/image/zumiez/pdp_hero/Krux-K4-Star-8.0%26quot%3B-Skateboard-Truck-_273306-front-US.jpg")',
+     'url("https://cdn.shopify.com/s/files/1/0605/3649/products/630-031-0072_1024x1024.jpg?v=1456942047")',
+     ]
      
-        Gripatpes = documet.getElementById("chinchilla")
-        Griptapes = innerHTML = ''
-        Griptapes = innerHTML += GriptapesDivs[0]
-        Griptapes = innerHTML += GriptapesDivs[1]
-        Griptapes = innerHTML += GriptapesDivs[2]
-        //alert ("you've chosen griptapes")
-        items = document.getElementsByClassName("item")
-        items[0].style.background = griptapeImages[0]
-        items[0].style.backgroundSize = '100% 100%'
-        items[1].style.background = griptapeImages[1]
-        items[1].style.backgroundSize = '100% 100%'
-        items[2].style.background = griptapeImages[2]
-        items[2].style.backgroundSize = '100% 100%'
-     }
-      trucksImages = [
-        'url("https://www.nhsfunfactory.com/mm5/grahics/00000001/IN_ThrasherTTGTruck_Silver_Front_448x224.jpg")',
-        'url("https://scene7.zumiez.com/is/image/zumiez/pdp_hero/Krux-K4-Star-8.0%26quot%3B-Skateboard-Truck-_273306-front-US.jpg")',
-        'url("https://cdn.shopify.com/s/files/1/0605/3649/products/630-031-0072_1024.jpg?v=1456942047")',
+  DecksDivs = [
+      '<div class="item"><p>Rick and Morty <span class="price">$60</span><br /><small>Mustard sierra leone bologi. </small></p></div>',
+			'<div class="item"><p>Kermit the Frog Supreme <span class="price">$60</span><br /><small>Tri-tip capicola kielbasa bresaola. </small></p></div>',
+			'<div class="item"><p>Michael Angelou TMNT x Santa Cruz <span class="price">$60</span><br /><small>Lollipop ice cream candy canes.</small></p></div>',
+		]
+
+  GriptapesDivs = [
+      '<div class="item"><p>Batman Griptape <span class="price">$25</span><br /><small>Mustard sierra leone bologi. </small></p></div>',
+      '<div class="item"><p>Thrasher Gripatpe <span class="price">$25</span><br /><small>Tri-tip capicola kielbasa bresaola. </small></p></div>',
+      '<div class="item"><p>Dragon Ball Z Goku Griptape <span class="price">$25</span><br /><small>Lollipop ice cream candy canes. </small></p></div>',
       ]
-     
-      DecksDivs = [
-        '<div class="item"><p>Rick and Morty <span class="price">$60</span><br /><small>Mustard sierra leone bologi. </small><p></div>',
-        '<div class="item"><p>Kermit the Frog Supreme <span class="price">$60</span><br /><small>Tri-tip capicola kielbasa bresaola. </small></p></div>',
-        '<div class="item"><p>Michael Angelou TMNT x Santa Cruz <span class="price">$60</span>br /><small>Lollipop ice cream candy canes. </small></p></div>',
-      ]
-     
-      GriptapesDivs = [
-        '<div class="item"><p>Batman Gripatape <span class="price">$25</span><br /><small>Mustard sierra leone bologi. </small></p></div>',
-        '<div class="item"><p>Thrasher Griptape <span class="price">$25</span><br /><small>Tri-tip capicola kielbasa breaola. </small></p></div>',
-        '<div class='item"><p>Dragon Ball Z Goku Griptape <span class="price">$25</span><br /><small>Lollipop ice cream candy canes. </small></p></div>',
-      ]
-      
-      TrucksDivs = [
+
+  TrucksDivs = [
       '<div class="item"><p>Thrasher (TIME TO GRIND) Trucks <span class="price">$25</span><br /><small>Mustard sierra leone bologi. </small></p></div>',
-      '<div class="item"><p>Galaxy Trucks <span class="price">$25</span><br /><small>Tri-tip capicola kielbasa bresaola. </small></p></div>',
-	  '<div class="item"><p>Checkered PHANTOM Trucks <span class="price">$25</span><br /><small>Lollipop ice cream candy canes.</small></p></div>',
+			'<div class="item"><p>Galaxy Trucks <span class="price">$25</span><br /><small>Tri-tip capicola kielbasa bresaola. </small></p></div>',
+			'<div class="item"><p>Checkered PHANTOM Trucks <span class="price">$25</span><br /><small>Lollipop ice cream candy canes.</small></p></div>',
 			]
 
   
