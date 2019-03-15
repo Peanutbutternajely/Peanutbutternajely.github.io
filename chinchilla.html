@@ -116,11 +116,12 @@ small {
 
 <script>
 
-   decksImages = [
+   DecksImages = [
      'url("https://s7d9.scene7.com/is/image/zumiez/cat_max/Primitive-x-Rick-and-Morty-PRod-Rick-8.0%26quot%3B-Skateboard-Deck-_309408.jpg")',
      'url("https://static.highsnobiety.com/wp-content/uploads/2018/04/30111809/supreme-skateboard-decks-9.jpg")',
      'url("https://img.skatewarehouse.com/watermark/rs.php?path=SCTMDK-1.jpg&nw=435")',
      'url("https://pacwave.com/wp-content/uploads/2018/10/TMNT_Skateboard_8_800x.jpg")',
+	'url("https://scene7.zumiez.com/is/image/zumiez/pdp_hero/RIPNDIP-We-Out-Here-8.25%26quot%3B-Skateboard-Deck-_263748-front-US.jpg")'
       ]
 
   function decks() {
@@ -130,59 +131,81 @@ small {
     Decks.innerHTML += DecksDivs[0]
     Decks.innerHTML += DecksDivs[1]
     Decks.innerHTML += DecksDivs[2]
+	Decks.innerHTML += DecksDivs[3]
+	Decks.innerHTML += DecksDivs[4]
     //alert ("you've chosen decks")
     items = document.getElementsByClassName("item")
-    items[0].style.background = decksImages[0]
+    items[0].style.background = DecksImages[0]
     items[0].style.backgroundSize = '100% 100%'
-    items[1].style.background = decksImages[1]
+    items[1].style.background = DecksImages[1]
     items[1].style.backgroundSize = '100% 100%'
-    items[2].style.background = decksImages[2]
+    items[2].style.background = DecksImages[2]
     items[2].style.backgroundSize = '100% 100%'
+	items[3].style.background = DecksImages[3]
+	items[3].style.backgroundSize = '100% 100%'
+	items[4].style.background = DecksImages[4]
+	items[4].style.backgroundSize = '100% 100%'
   }
-   griptapeImages = [
+   GriptapeImages = [
      'url("https://cdn.shoplightspeed.com/shops/611925/files/4046048/globe-almost-batman-abstract-grip-tape.jpg")',
      'url("https://img.skatewarehouse.com/watermark/rs.php?path=THSGGT-1.jpg&nw=435")',
      'url("https://cdn.shoplightspeed.com/shops/607275/files/11012201/650x750x2/primitive-skateboards-dragon-ball-z-goku-grip-tape.jpg")',
+	 'url("https://s7d9.scene7.com/is/image/zumiez/cat_max/Odd-Future-x-Santa-Cruz-Screaming-Donut-Grip-Tape-_294848.jpg")',
+	 'url("https://scene7.zumiez.com/is/image/zumiez/pdp_hero/Cloud-9-Watercolor-Galaxy-Griptape-_273209-front.jpg")',
      ]
      
   function griptape() {
     
-    Griptapes = document.getElementById("chinchilla")
-    Griptapes.innerHTML = ''
-    Griptapes.innerHTML += GriptapesDivs[0]
-    Griptapes.innerHTML += GriptapesDivs[1]
-    Griptapes.innerHTML += GriptapesDivs[2]
+    Griptape = document.getElementById("chinchilla")
+    Griptape.innerHTML = ''
+    Griptape.innerHTML += GriptapeDivs[0]
+    Griptape.innerHTML += GriptapeDivs[1]
+    Griptape.innerHTML += GriptapeDivs[2]
+	Griptape.innerHTML += GriptapeDivs[3]
+	Griptape.innerHTML += GriptapeDivs[4]
     //alert ("you've chosen griptapes")
     items = document.getElementsByClassName("item")
-    items[0].style.background = griptapeImages[0]
+    items[0].style.background = GriptapeImages[0]
     items[0].style.backgroundSize = '100% 100%'
-    items[1].style.background = griptapeImages[1]
+    items[1].style.background = GriptapeImages[1]
     items[1].style.backroundSize = '100% 100%'
-    items[2].style.background = griptapeImages[2]
+    items[2].style.background = GriptapeImages[2]
     items[2].style.backgroundSize = '100% 100%'
+	items[3].style.background = GriptapeImages[3]
+    items[3].style.backgroundSize = '100% 100%'
+	items[4].style.background = GriptapeImages[4]
+    items[4].style.backgroundSize = '100% 100%'
   }
-   trucksImages = [
+   TrucksImages = [
      'url("https://www.nhsfunfactory.com/mm5/graphics/00000001/IN_ThrasherTTGTruck_Silver_Front_448x224.jpg")',
      'url("https://scene7.zumiez.com/is/image/zumiez/pdp_hero/Krux-K4-Star-8.0%26quot%3B-Skateboard-Truck-_273306-front-US.jpg")',
      'url("https://cdn.shopify.com/s/files/1/0605/3649/products/630-031-0072_1024x1024.jpg?v=1456942047")',
+	 'url("https://www.skatedeluxe.com/blog/wp-content/uploads/2017/01/trucks-skateboard-wiki-600x400.jpg")',
+	 'url("https://www.nhsfunfactory.com/mm5/graphics/00000001/IN_129_forgedhollow_anored_front_448x224.jpg")',
      ]
-     
+		 
   DecksDivs = [
-      '<div class="item"><p>Rick and Morty <span class="price">$60</span><br /><small>Mustard sierra leone bologi. </small></p></div>',
-			'<div class="item"><p>Kermit the Frog Supreme <span class="price">$60</span><br /><small>Tri-tip capicola kielbasa bresaola. </small></p></div>',
-			'<div class="item"><p>Michael Angelou TMNT x Santa Cruz <span class="price">$60</span><br /><small>Lollipop ice cream candy canes.</small></p></div>',
+      '<div class="item" onclick=this.classList.toggle("show-description")><p>Rick and Morty <span class="price">$60</span><br /><small>Mustard sierra leone bologi. </small></p></div>',
+			'<div class="item" onclick=this.classList.toggle("show-description")><p>Kermit the Frog Supreme <span class="price">$60</span><br /><small>Tri-tip capicola kielbasa bresaola. </small></p></div>',
+			'<div class="item" onclick=this.classList.toggle("show-description")><p>Michael Angelou TMNT x Santa Cruz <span class="price">$60</span><br /><small>Lollipop ice cream candy canes.</small></p></div>',
+	        '<div class="item" onclick=this.classList.toggle("show-description")><p>TMNT x Santa Cruz <span class="price">$60</span><br /><small>TMNT x Santa Cruz. </small></p></div>',
+	        '<div class="item" onclick=this.classList.toggle("show-description")><p>RIPNDIP <span class="price">$60</span><br /><small>ripndip alien. </small></p></div>',
 		]
 
-  GriptapesDivs = [
-      '<div class="item"><p>Batman Griptape <span class="price">$25</span><br /><small>Mustard sierra leone bologi. </small></p></div>',
-      '<div class="item"><p>Thrasher Gripatpe <span class="price">$25</span><br /><small>Tri-tip capicola kielbasa bresaola. </small></p></div>',
-      '<div class="item"><p>Dragon Ball Z Goku Griptape <span class="price">$25</span><br /><small>Lollipop ice cream candy canes. </small></p></div>',
+  GriptapeDivs = [
+      '<div class="item" onclick=this.classList.toggle("show-description")><p>Batman Griptape <span class="price">$25</span><br /><small>Mustard sierra leone bologi. </small></p></div>',
+      '<div class="item" onclick=this.classList.toggle("show-description")><p>Thrasher Gripatpe <span class="price">$25</span><br /><small>Tri-tip capicola kielbasa bresaola. </small></p></div>',
+      '<div class="item" onclick=this.classList.toggle("show-description")><p>Dragon Ball Z Goku Griptape <span class="price">$25</span><br /><small>Lollipop ice cream candy canes. </small></p></div>',
+	  '<div class="item" onclick=this.classList.toggle("show-description")><p>Odd Future Griptape <span class="price">$25</span><br /><small>griptape fun donut odd future. </small></p></div>',
+	  '<div class="item" onclick=this.classList.toggle("show-description")><p>Watercolor Galaxy Griptape <span class="price">$25</span><br /><small>water color griptape galaxy. </small></p></div>',
       ]
 
   TrucksDivs = [
-      '<div class="item"><p>Thrasher (TIME TO GRIND) Trucks <span class="price">$25</span><br /><small>Mustard sierra leone bologi. </small></p></div>',
-			'<div class="item"><p>Galaxy Trucks <span class="price">$25</span><br /><small>Tri-tip capicola kielbasa bresaola. </small></p></div>',
-			'<div class="item"><p>Checkered PHANTOM Trucks <span class="price">$25</span><br /><small>Lollipop ice cream candy canes.</small></p></div>',
+      '<div class="item" onclick=this.classList.toggle("show-description")><p>Thrasher (TIME TO GRIND) Trucks <span class="price">$25</span><br /><small>Mustard sierra leone bologi. </small></p></div>',
+			'<div class="item" onclick=this.classList.toggle("show-description")><p>Galaxy Trucks <span class="price">$25</span><br /><small>Tri-tip capicola kielbasa bresaola. </small></p></div>',
+			'<div class="item" onclick=this.classList.toggle("show-description")><p>Checkered PHANTOM Trucks <span class="price">$25</span><br /><small>Lollipop ice cream candy canes. </small></p></div>',
+	  '<div class="item" onclick=this.classList.toggle("show-description")><p>Independent Trucks <span class="price">$25</span><br /><small>independent trucks. </small></p></div>',
+	  '<div class="item" onclick=this.classList.toggle("show-description")><p>Red Independent Trucks <span class="price">$25</span><br /><small>independent trucks red trucks. </small></p></div>',
 			]
 
   
@@ -193,26 +216,98 @@ small {
     Trucks.innerHTML += TrucksDivs[0]
     Trucks.innerHTML += TrucksDivs[1]
     Trucks.innerHTML += TrucksDivs[2]
+	Trucks.innerHTML += TrucksDivs[3]
+	Trucks.innerHTML += TrucksDivs[4]
     //alert ("you've chosen trucks")
     items = document.getElementsByClassName("item")
-    items[0].style.background = trucksImages[0]
+    items[0].style.background = TrucksImages[0]
     items[0].style.backgroundSize = '100% 100%'
-    items[1].style.background = trucksImages[1]
+    items[1].style.background = TrucksImages[1]
     items[1].style.backgroundSize = '100% 100%'
-    items[2].style.background = trucksImages[2]
+    items[2].style.background = TrucksImages[2]
     items[2].style.backgroundSize = '100% 100%'
+	items[3].style.background = TrucksImages[3]
+	items[3].style.backgroundSize = '100% 100%'
+	items[4].style.background = TrucksImages[4]
+	items[4].style.backgroundSize ='100% 100%'
   }
    
+  WheelsImages = [
+	'url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMllA3NOD4HCMs7-DISSomhwSFRSfkdpoaFE51So4ZQVOTOG5-")',
+	'url("https://cdn.ccs.com/media/catalog/product/cache/4/image/9df78eab33525d08d6e5fb8d27136e95/8/8/888560155275-1.1536934070.jpg")',
+	'url("https://cdn.warehouseskateboards.com/images/products/preview/1WBONBINZPD55WW.jpg")',
+	'url("https://www.tactics.com/a/9h6f/9/bones-stf-v5-skateboard-wheels-annuals-83b.webp")',
+	'url("https://scene7.zumiez.com/is/image/zumiez/pdp_hero/Primitive-x-Dragon-Ball-Z-Rodriguez-51mm-Skateboard-Wheels-_298341-front-US.jpg")',
+   ]
   function wheels() {
-    alert ("you've chosen wheels")
+	Wheels = document.getElementById("chinchilla")
+	Wheels.innerHTML = ''
+	Wheels.innerHTML += WheelsDivs[0]
+	Wheels.innerHTML += WheelsDivs[1]
+	Wheels.innerHTML += WheelsDivs[2]
+	Wheels.innerHTML += WheelsDivs[3]
+	Wheels.innerHTML += WheelsDivs[4]
+    //alert ("you've chosen wheels")
+	items = document.getElementsByClassName("item")
+	items[0].style.background = WheelsImages[0]
+	items[0].style.backgroundSize = '100% 100%'
+	items[1].style.background = WheelsImages[1]
+	items[1].style.backgroundSize = '100% 100%'
+    items[2].style.background = WheelsImages[2]
+	items[2].style.backgroundSize = '100% 100%'
+	items[3].style.background = WheelsImages[3]
+	items[3].style.backgroundSize = '100% 100%'
+	items[4].style.background = WheelsImages[4]
+	items[4].style.backgroundSize = '100% 100%'
   }
+  
+  WheelsDivs = [
+	  '<div class="item" onclick=this.classList.toggle("show-description")><p>Enjoi Wheels <span class="price">$15</span><br /><small>Mustard sierra leone bologi. </small></p></div>',
+	  '<div class="item" onclick=this.classList.toggle("show-description")><p>Spitfire Wheels <span class="price">$15</span><br /><small>Tri-tip capicola kielbasa bresaola. </small></p></div>',
+	  '<div class="item" onclick=this.classList.toggle("show-description")><p>Skeleton Wheels <span class="price">$15</span><br /><small>Lollipop ice cream candy canes. </small></p></div>',
+	  '<div class="item" onclick=this.classList.toggle("show-description")><p>Bones Wheels <span class="price">$15</span><br /><small>Bones skateboard wheels white. </small></p></div>',
+	  '<div class="item" onclick=this.classList.toggle("show-description")><p>Dragon Ball Z Wheels <span class="price">$15</span><br /><small>Dragon Ball Z skateboard wheels. </small></p></div>',
+  ]
+  
+  BearingsImages = [
+	'url("https://scene7.zumiez.com/is/image/zumiez/pdp_hero/Bronson-Raw-Skateboard-Bearings--_278475-front-US.jpg")',
+	'url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS09kwKFm1Yw8Ksw1HPQNallvmRjqxfh2FcSj2bTg_CKyesBVzY")',
+	'url("https://www.nativeskatestore.co.uk/images/bones-swiss-ceramics-skateboard-bearings-p956-50021_medium.jpg")',
+	'url("https://www.tactics.com/a/9b2e/9/bronson-speed-co-bearings-raw-skateboard-bearings.webp")',
+	'url("https://cdn.shopify.com/s/files/1/0605/3649/products/640-086-0001_1024x1024.jpeg?v=1411933186")',
+]
   function bearings() {
-    alert ("you've chosen bearings")
+	Bearings = document.getElementById("chinchilla")
+	Bearings.innerHTML = ''
+	Bearings.innerHTML += BearingsDivs[0]
+    Bearings.innerHTML += BearingsDivs[1]
+	Bearings.innerHTML += BearingsDivs[2]
+	Bearings.innerHTML += BearingsDivs[3]
+	Bearings.innerHTML += BearingsDivs[4]
+    //alert ("you've chosen bearings")
+	items = document.getElementsByClassName("item")
+	items[0].style.background = BearingsImages[0]
+	items[0].style.backgroundSize = '100% 100%'
+	items[1].style.background = BearingsImages[1]
+	items[1].style.backgroundSize = '100% 100%'
+	items[2].style.background = BearingsImages[2]
+	items[2].style.backgroundSize = '100% 100%'
+	items[3].style.background = BearingsImages[3]
+	items[3].style.backgroundSize = '100% 100%'
+	items[4].style.background = BearingsImages[4]
+	items[4].style.backgroundSize = '100% 100%'
   }
+  
+  BearingsDivs = [
+	  '<div class="item" onclick=this.classList.toggle("show-description")><p>Raw Bearings <span class="price">$15</span><br /><small>Mustard sierra leone bologi. </small></p></div>',
+	  '<div class="item" onclick=this.classList.toggle("show-description")><p>Spitfire Bearings <span class="price">$15</span><br /><small>Tri-tip capicola kielbasa bresaola. </small></p></div>',
+	  '<div class="item" onclick=this.classList.toggle("show-description")><p>Bones Swiss Cermaics Bearings <span class="price">$15</span><br />small>Lollipop ice cream candy canes. </small></p></div>',
+	  '<div class="item" onclick=this.classList.toggle("show-description")><p>Bearings <span class="price">$15</span><br />small>skateboard bearings. </small></p></div>',
+	  '<div class="item" onclick=this.classList.toggle("show-description")><p>Bearings <span class="price">$15</span><br />small>skateboard bearings. </small></p></div>',
+  ]
+  
 
-  $('div').on('click', function() {
-      $(this).toggleClass('show-description');
-  });
+  
 </script>
 
 </body>  
