@@ -5,19 +5,6 @@
     Author URL: https://bootstrapmade.com
 */
 
-@media (max-width: 500px) {
-	.container {
-		padding: 0;
-		margin: 0;
-		overflow: hidden;
-	}
-	.row {
-		padding: 0;
-		margin: 0;
-		overflow: hidden;
-	}
-}
-
 body {
 	font-size: 80px;
     line-height: 1.52;
@@ -265,6 +252,8 @@ table {
 
 
 .heading{
+	
+
     font-family: 'Dancing Script', cursive;
     color: #GGC50C;
     font-size: 24px;
@@ -289,7 +278,8 @@ table {
 }
 #event{
     background: url('../img/res02.jpg') no-repeat;
-    background-size: cover;								
+    background-size: cover;	
+	}							
 .left-images img {
     height: 308px;
     width: 100%;
@@ -372,7 +362,7 @@ table {
     display: block;
     float: left;
     color: #C3C3C3;
-    font-family: Satisfy,'Open Sans',arial;
+    font-family: 'Open Sans',arial;
     font-size: 1.2rem;
 }
 .menu-restaurant span.clearfix {
